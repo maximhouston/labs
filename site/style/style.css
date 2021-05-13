@@ -1,0 +1,244 @@
+*{ 
+margin:0;
+padding:0;
+font-family: 'Roboto', sans-serif;
+}
+body{background-color: #FFF8DC;}
+
+header{
+	display: flex;
+	height: 100px;
+	background-color: #FFDAB9;
+	margin-bottom: 10px;
+	padding-top: 2%;
+	padding-left: 20%;
+	border-radius: 10px;
+	box-shadow: 7px 4px 8px 0px rgba(234, 95, 3, 0.2);
+}
+
+a{
+	text-decoration: none;
+	color:black;
+}
+
+header img{
+	width: 8%;
+}
+nav{
+	background-color: #FFDAB9;
+	margin-bottom: 10px;
+}
+.navi{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	height: 100px;
+}
+.navi li {
+	list-style-type: none;
+	padding: 20px;
+}
+
+.navi li:hover{
+	background-color: #CD5C5C;	
+}
+
+section{
+ display: flex;
+}
+
+h4 {
+	padding: 10px;
+}
+aside{
+	padding-left: 5%;
+	background-color: #FFDAB9;
+	width: 30%;
+	border-radius: 5px;
+	box-shadow: 7px 4px 8px 0px rgba(234, 95, 3, 0.2);
+}
+aside li{
+	list-style-type: none;
+	padding: 5px;
+}
+
+
+aside a:hover{
+	 color:#CD5C5C;
+}
+
+article{
+	padding: 15px;
+	background-color: #FFDAB9;
+	width: 70%;
+	margin-left: 1%;
+	border-radius: 5px;
+	box-shadow: 7px 4px 8px 0px rgba(234, 95, 3, 0.2);
+}
+
+footer{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin-top:10px;
+	width: 100%;
+	height: 100px;
+	background-color: #FFDAB9;
+	border-radius: 5px;
+	box-shadow: 7px 4px 8px 0px rgba(234, 95, 3, 0.2);
+}
+table{
+border-collapse: collapse;
+   border: 3px solid grey;
+}
+
+td, th {
+   border: 1px solid grey;
+  padding: 10px;
+  padding-left: 20px;
+}
+
+/*PAGE MENU*/
+article h1{
+	text-align: center;
+}
+
+article h3{
+	font-size: 18px;
+}
+
+article h4{
+	font-size: 15px;
+	text-align: right;
+	font-style: italic;
+}
+
+article ul{
+	font-style: italic;
+	padding: 15px;
+}
+
+.img_help {
+	display: block;
+	width: 500px;
+	padding: 15px;
+	margin: auto;
+}
+
+.doctor {
+	width: 200px;
+	float:right;
+	border: 1px solid;
+}
+
+a.buttom {
+  clear:both;
+  color: #fff; /* цвет текста */
+  text-decoration: none; /* убирать подчёркивание у ссылок */
+  user-select: none; /* убирать выделение текста */
+  background: rgb(212,75,56); /* фон кнопки */
+  padding: .7em 1.5em; /* отступ от текста */
+  outline: none; /* убирать контур в Mozilla */
+  float:right;
+  margin-top: 10px;
+} 
+a.buttom:hover { background: rgb(232,95,76); } /* при наведении курсора мышки */
+a.buttom:active { background: rgb(152,15,0); } /* при нажатии */
+
+input[type=submit]{
+  color: #fff; /* цвет текста */
+  text-decoration: none; /* убирать подчёркивание у ссылок */
+  user-select: none; /* убирать выделение текста */
+  background: rgb(212,75,56); /* фон кнопки */
+  padding: .7em 1.5em; /* отступ от текста */
+  outline: none; /* убирать контур в Mozilla */	
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+input[type=text]{
+	margin-left:30px;
+	padding-left:10px;
+	padding-right:10px;
+}
+
+.form {
+	float: left;
+}
+
+#timer{
+	font-size: 15px;	
+}
+
+ul h2{
+	font-size: 15px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 1000;
+}
+.modal .modal_content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    z-index: 99999;
+}
+.modal .modal_content .close_modal_window {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#btn_modal_window {
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+  padding: 5px 15px;
+  margin: 10px 20px;
+  border-radius: 10px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-image: linear-gradient(to right, #9EEFE1 0%, #4830F0 51%, #9EEFE1 100%);
+  background-size: 200% auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+  transition: .5s;
+}
+#btn_modal_window:hover {
+  background-position: right center;
+}
+
+.pagination {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+  justify-content: center;
+}
+
+.pagination> li{
+  list-style-type: none;
+  padding: 5px;
+  background-color: white;
+  margin:5px;
+}
+
+.disabled>a{
+	 color: red;
+	 cursor: not-allowed;
+	 pointer-events: none;
+}
